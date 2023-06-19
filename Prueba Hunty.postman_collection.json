@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "e03cc831-1d20-49ae-8e87-bb53fb71d056",
+		"name": "Prueba Hunty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24470347"
+	},
+	"item": [
+		{
+			"name": "Test",
+			"item": [
+				{
+					"name": "POST Whatsapp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer EAALbL4qQrfkBAKUMv16up051V6FLwv6vP1P6BJjjDrhPwcZCNiBqaNtzD2CJPiWxZC1Wjr5ij9dXhlmZAzOzZAwGqMwRUlNCX59qx7YYeUHMDgPEXh9ZBhHgaTrgYPxjSYncalI0fND3MJsrKkonzvXVI7AwkNLkln3FyabSAZAZBIl1nch4pEc7uDPMl6hVTn7X4VlogMSEzxGUbesrWyL",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"messaging_product\": \"whatsapp\", \r\n\"to\": \"573153276332\", \r\n\"type\": \"template\", \r\n\"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://graph.facebook.com/v17.0/112741911853699/messages",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v17.0",
+								"112741911853699",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Whatsapp Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer EAALbL4qQrfkBAKUMv16up051V6FLwv6vP1P6BJjjDrhPwcZCNiBqaNtzD2CJPiWxZC1Wjr5ij9dXhlmZAzOzZAwGqMwRUlNCX59qx7YYeUHMDgPEXh9ZBhHgaTrgYPxjSYncalI0fND3MJsrKkonzvXVI7AwkNLkln3FyabSAZAZBIl1nch4pEc7uDPMl6hVTn7X4VlogMSEzxGUbesrWyL",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"messaging_product\": \"whatsapp\",\r\n    \"recipient_type\": \"individual\",\r\n    \"to\": \"573153276332\",\r\n    \"type\": \"template\",\r\n    \"template\": {\r\n        \"name\": \"plantilla_test\",\r\n        \"language\": {\r\n            \"code\": \"language-and-locale-code\"\r\n        },\r\n        \"components\": [\r\n            {\r\n                \"type\": \"body\",\r\n                \"parameters\": [\r\n                    {\r\n                        \"type\": \"text\",\r\n                        \"text\": \"Me amo\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://graph.facebook.com/v17.0/112741911853699/messages",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v17.0",
+								"112741911853699",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SENT plantilla",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "EAALbL4qQrfkBAPxwzuqYAYZAa7hNEFxvEQgqZAgDIaso3oGHJgq2GKcq6zrIVuxvGmZAeqUi2dgGuPqEZAma4Ex9P5gZBlGiSJMAcZBxivFlB2BTNZBB5rWAJAGtsSLbDJoO14ZAmW7pjApnKxUqyOywG3TESAIvg8lNtSWZAHs00d00HScnqJrcroeqWxZARtS5tDPQdTmqyjCvBfmaNG57o0ojU3zAQDQW4ZD",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"messaging_product\": \"whatsapp\", \r\n\"to\": \"573153276332\", \r\n\"type\": \"template\", \r\n\"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://graph.facebook.com/v17.0/112741911853699/messages",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v17.0",
+								"112741911853699",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEND tipo text",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "EAALbL4qQrfkBAPxwzuqYAYZAa7hNEFxvEQgqZAgDIaso3oGHJgq2GKcq6zrIVuxvGmZAeqUi2dgGuPqEZAma4Ex9P5gZBlGiSJMAcZBxivFlB2BTNZBB5rWAJAGtsSLbDJoO14ZAmW7pjApnKxUqyOywG3TESAIvg8lNtSWZAHs00d00HScnqJrcroeqWxZARtS5tDPQdTmqyjCvBfmaNG57o0ojU3zAQDQW4ZD",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"messaging_product\": \"whatsapp\",    \r\n    \"recipient_type\": \"individual\",\r\n    \"to\": \"573153276332\",\r\n    \"type\": \"text\",\r\n    \"text\": {\r\n        \"preview_url\": false,\r\n        \"body\": \"Me amo\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://graph.facebook.com/v17.0/112741911853699/messages",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v17.0",
+								"112741911853699",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Test API",
+			"item": [
+				{
+					"name": "Get test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Whatsapp Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer EAALbL4qQrfkBAKUMv16up051V6FLwv6vP1P6BJjjDrhPwcZCNiBqaNtzD2CJPiWxZC1Wjr5ij9dXhlmZAzOzZAwGqMwRUlNCX59qx7YYeUHMDgPEXh9ZBhHgaTrgYPxjSYncalI0fND3MJsrKkonzvXVI7AwkNLkln3FyabSAZAZBIl1nch4pEc7uDPMl6hVTn7X4VlogMSEzxGUbesrWyL",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"messaging_product\": \"whatsapp\",\r\n    \"recipient_type\": \"individual\",\r\n    \"to\": \"573153276332\",\r\n    \"type\": \"template\",\r\n    \"template\": {\r\n        \"name\": \"hello_world\",\r\n        \"language\": {\r\n            \"code\": \"en_US\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/test",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send message Text",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer EAALbL4qQrfkBAKUMv16up051V6FLwv6vP1P6BJjjDrhPwcZCNiBqaNtzD2CJPiWxZC1Wjr5ij9dXhlmZAzOzZAwGqMwRUlNCX59qx7YYeUHMDgPEXh9ZBhHgaTrgYPxjSYncalI0fND3MJsrKkonzvXVI7AwkNLkln3FyabSAZAZBIl1nch4pEc7uDPMl6hVTn7X4VlogMSEzxGUbesrWyL",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"messaging_product\": \"whatsapp\",    \r\n    \"recipient_type\": \"individual\",\r\n    \"to\": \"573116881357\",\r\n    \"type\": \"text\",\r\n    \"text\": {\r\n        \"preview_url\": false,\r\n        \"body\": \"*Care monda*\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://graph.facebook.com/v17.0/112741911853699/messages",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v17.0",
+								"112741911853699",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deploy",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"messaging_product\": \"whatsapp\",    \r\n    \"recipient_type\": \"individual\",\r\n    \"to\": \"573153276332\",\r\n    \"type\": \"text\",\r\n    \"text\": {\r\n        \"preview_url\": false,\r\n        \"body\": \"*Care monda*\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apichatcloudapi.azurewebsites.net/test",
+							"protocol": "https",
+							"host": [
+								"apichatcloudapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apichatcloudapi.azurewebsites.net/",
+							"protocol": "https",
+							"host": [
+								"apichatcloudapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Whatsapp Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer EAALbL4qQrfkBAKUMv16up051V6FLwv6vP1P6BJjjDrhPwcZCNiBqaNtzD2CJPiWxZC1Wjr5ij9dXhlmZAzOzZAwGqMwRUlNCX59qx7YYeUHMDgPEXh9ZBhHgaTrgYPxjSYncalI0fND3MJsrKkonzvXVI7AwkNLkln3FyabSAZAZBIl1nch4pEc7uDPMl6hVTn7X4VlogMSEzxGUbesrWyL",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"messaging_product\": \"whatsapp\", \r\n\"to\": \"573153276332\", \r\n\"type\": \"template\", \r\n\"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://graph.facebook.com/v17.0/112741911853699/messages",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v17.0",
+								"112741911853699",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
