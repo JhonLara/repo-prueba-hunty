@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f1fa94ad-96ec-4a99-948b-6ac8c44a80de/resourceGroups/apichatcloudapi/providers/Microsoft.Web/sites/apichatcloudapi",
+    "appService.deploySubpath": "src"
+}
